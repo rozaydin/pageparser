@@ -1,0 +1,43 @@
+{
+  "name": "TypescriptNodeJSStarter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "build": "tsc",
+    "clean": "rm -r ./dist",
+    "serve": "node ./dist/index.js",
+    "watch": "",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-ts": "",
+    "watch-ts": "",
+    "build-sass": "",
+    "watch-sass": "",
+    "tslint": "",
+    "copy-static-assets": ""
+  },
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "template"
+  ],
+  "author": "Rıdvan Özaydın",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^9.4.0",
+    "jest": "^22.1.4",
+    "ts-jest": "^22.0.2"
+  },
+  "dependencies": {
+    "@types/base-64": "^0.1.2",
+    "@types/cheerio": "^0.22.7",
+    "@types/node-forge": "^0.7.2",
+    "@types/utf8": "^2.1.6",
+    "axios": "^0.17.1",
+    "base-64": "^0.1.0",
+    "cheerio": "^1.0.0-rc.2",
+    "node-forge": "^0.7.1",
+    "utf8": "^3.0.0"
+  }
+}
