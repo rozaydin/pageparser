@@ -2,11 +2,16 @@ import { PageGrabber } from "./service/PageGrabber";
 import * as cheerio from "cheerio";
 
 const pageGrabber = new PageGrabber();
-const result = pageGrabber.grabPage(
-  "http://www.worldrealestate.world/bahcelievler-sirinevler-mah-70m2-2-1-satilik-daire-71244640.html"
-);
-result.then(html => {
-  const $ = cheerio.load(html);
-  const details = $.html("#detaylar");
-  console.log(details);
-});
+pageGrabber
+  .parsePages([
+    "http://www.worldrealestate.world/duplex-apartment-for-sale-in-esenyurt-84413779.html",
+    "http://www.worldrealestate.world/avcilar-denizkoskler-39-de-400m2-6-1-satilik-villa-64546741.html"
+  ])
+  .then(results => {
+    // json results
+    results.forEach((result, index) => {      
+      console.log("--------------------");      
+      console.log(JSON.stringify(result));
+      console.log("--------------------");
+    });
+  });
