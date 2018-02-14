@@ -1,4 +1,3 @@
-// awsCredentials = "AKIAIZ2YC2X4CHUGGCYA", "L7miQ/2iiet0uuOlYi8Z1UmAx7lYXk5XQnv97JQn";
 import { Handler, Context, Callback } from "aws-lambda";
 import { PageGrabber } from "../service/PageGrabber";
 import * as cheerio from "cheerio";
